@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edukasi Hijau Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-green-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav
+        class="fixed w-full top-0 left-0 bg-white/70 backdrop-blur-md text-gray-800 px-6 py-4 flex justify-between items-center shadow-md z-50">
+        <div class="text-2xl font-bold">Edukasi Hijau Digital</div>
+
+        <!-- Tombol hamburger -->
+        <button id="menu-btn" class="block md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <!-- Menu utama -->
+        <ul id="menu"
+            class="hidden flex-col md:flex md:flex-row md:space-x-6 absolute md:static top-full left-0 w-full md:w-auto bg-white/90 md:bg-transparent p-6 md:p-0 space-y-4 md:space-y-0">
+            <li><a href="#" class="hover:text-green-700 transition block">Beranda</a></li>
+            <li><a href="#tentang" class="hover:text-green-700 transition block">Tentang</a></li>
+            <li><a href="#infografis" class="hover:text-green-700 transition block">Infografis</a></li>
+            <li><a href="#kontak" class="hover:text-green-700 transition block">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🌏 Hero Section -->
+    <header id="beranda" class="text-center py-20 px-6 bg-green-100">
+        <h1 class="text-3xl md:text-4xl font-bold mb-4 text-green-800">
+            Permasalahan Limbah Elektronik di Era Digital
+        </h1>
+        <p class="max-w-2xl mx-auto text-gray-700 mb-6">
+            Edukasi hijau digital untuk meningkatkan kesadaran masyarakat tentang bahaya limbah elektronik dan
+            pentingnya pengelolaan berkelanjutan di era teknologi.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#materi" class="bg-green-700 text-white px-5 py-2 rounded-md hover:bg-green-800 transition">
+                Pelajari Sekarang
+            </a>
+            <a href="#poster" class="bg-green-500 text-white px-5 py-2 rounded-md hover:bg-green-600 transition">
+                Lihat Poster
+            </a>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-b from-green-50 to-white py-16 px-6 text-gray-800">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <h2 class="text-4xl font-bold text-green-700 mb-4">🌍 Permasalahan Limbah Elektronik di Era Digital</h2>
+            <p class="text-lg text-gray-600">
+                Edukasi untuk mengenal, memahami, dan menangani e-waste demi bumi yang lebih hijau.
+            </p>
+        </div>
+
+        <!-- Grid konten -->
+        <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+            <!-- 1. Apa itu -->
+            <div class="bg-white rounded-2xl shadow-md p-6 border border-green-100">
+                <h3 class="text-2xl font-semibold text-green-700 mb-3">🧩 Apa Itu Limbah Elektronik (E-Waste)?</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Limbah elektronik adalah barang elektronik yang sudah tidak dipakai lagi seperti:
+                    <br>📱 Handphone rusak, 💻 Laptop bekas, 🔌 Kabel dan baterai.
+                    <br><br>
+                    E-waste mengandung bahan berbahaya seperti timbal dan merkuri yang bisa merusak lingkungan.
+                </p>
+            </div>
+
+            <!-- 2. Dampak Negatif -->
+            <div class="bg-white rounded-2xl shadow-md p-6 border border-green-100">
+                <h3 class="text-2xl font-semibold text-green-700 mb-3">⚠️ Dampak Negatif Limbah Elektronik</h3>
+                <ul class="text-gray-700 list-disc ml-5 leading-relaxed">
+                    <li><strong>Lingkungan:</strong> mencemari tanah dan air, menurunkan kualitas udara.</li>
+                    <li><strong>Manusia:</strong> menyebabkan gangguan pernapasan dan kerusakan organ tubuh.</li>
+                </ul>
+            </div>
+
+            <!-- 3. Cara Menangani -->
+            <div class="bg-white rounded-2xl shadow-md p-6 border border-green-100">
+                <h3 class="text-2xl font-semibold text-green-700 mb-3">💡 Cara Menangani E-Waste dengan Bijak</h3>
+                <ul class="text-gray-700 list-disc ml-5 leading-relaxed">
+                    <li>🔄 <strong>Recycle:</strong> Kirim ke tempat pengelolaan khusus.</li>
+                    <li>♻️ <strong>Reuse:</strong> Donasikan perangkat yang masih bisa digunakan.</li>
+                    <li>🚯 <strong>Reduce:</strong> Kurangi kebiasaan gonta-ganti gadget.</li>
+                </ul>
+            </div>
+
+            <!-- 4. Peran Masyarakat -->
+            <div class="bg-white rounded-2xl shadow-md p-6 border border-green-100">
+                <h3 class="text-2xl font-semibold text-green-700 mb-3">🌱 Peran Masyarakat</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Edukasi orang di sekitar, ikut program pengumpulan e-waste, dan gunakan teknologi secara bijak.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🎯 Tujuan -->
+    <section id="tujuan" class="py-16 bg-white">
+        <h2 class="text-2xl font-semibold text-center text-green-800 mb-10">Tujuan Proyek</h2>
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+            <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <div class="text-4xl mb-3">🌱</div>
+                <h3 class="font-semibold text-lg mb-2 text-green-800">Edukasi Masyarakat</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                    Meningkatkan pengetahuan masyarakat tentang apa itu limbah elektronik dan cara penanganannya.
+                </p>
+            </div>
+            <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <div class="text-4xl mb-3">♻️</div>
+                <h3 class="font-semibold text-lg mb-2 text-green-800">Kesadaran Lingkungan</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                    Menjelaskan dampak negatif limbah elektronik bagi manusia, alam, dan keberlanjutan lingkungan.
+                </p>
+            </div>
+            <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <div class="text-4xl mb-3">💡</div>
+                <h3 class="font-semibold text-lg mb-2 text-green-800">Aksi Nyata</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                    Mendorong masyarakat untuk ikut berpartisipasi dalam pengelolaan limbah elektronik.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📘 Materi Edukasi -->
+    <section id="materi" class="bg-green-100 py-16 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-2xl font-semibold text-green-800 mb-8">Materi Edukasi</h2>
+            <p class="text-gray-700 mb-10">
+                Limbah elektronik atau e-waste adalah sisa dari perangkat elektronik yang sudah tidak digunakan, seperti
+                ponsel, laptop, televisi, dan baterai.
+                Jika tidak dikelola dengan benar, limbah ini dapat mencemari tanah dan air karena mengandung zat
+                berbahaya seperti merkuri, timbal, dan kadmium.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-green-800 mb-2">🌍 Dampak Negatif</h3>
+                    <ul class="text-left text-sm text-gray-700 list-disc list-inside">
+                        <li>Mencemari tanah dan sumber air.</li>
+                        <li>Mengganggu kesehatan manusia akibat bahan kimia beracun.</li>
+                        <li>Menyebabkan pemanasan global akibat pembakaran sampah elektronik.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-green-800 mb-2">🌿 Solusi & Upaya</h3>
+                    <ul class="text-left text-sm text-gray-700 list-disc list-inside">
+                        <li>Gunakan kembali perangkat yang masih bisa diperbaiki.</li>
+                        <li>Pisahkan limbah elektronik dari sampah biasa.</li>
+                        <li>Daur ulang perangkat elektronik di tempat resmi.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📊 Poster -->
+    <section id="poster" class="py-16 bg-white text-center">
+        <h2 class="text-2xl font-semibold text-green-800 mb-8">Poster & Kampanye</h2>
+        <p class="max-w-2xl mx-auto text-gray-700 mb-10">
+            Kami membuat poster infografis menarik untuk mengedukasi masyarakat tentang cara mengelola limbah elektronik
+            dengan bijak.
+        </p>
+        <div class="flex justify-center">
+            <img src="https://i.ibb.co/Y8wsyS2/ewaste.jpg" alt="Poster Edukasi Limbah Elektronik"
+                class="rounded-lg shadow-md w-96">
+        </div>
+    </section>
+
+    <!-- ✅ To-Do List Aksi Nyata -->
+    <section id="todo" class="py-16 px-6 bg-green-50">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+            <h2 class="text-2xl font-semibold text-green-800 mb-4">Aksi Nyata: To-Do List</h2>
+            <p class="text-gray-700 mb-6">
+                Lakukan langkah kecil untuk mengelola limbah elektronik secara bijak. Centang yang sudah dilakukan!
+            </p>
+        </div>
+
+        <ul class="max-w-3xl mx-auto space-y-4">
+            <li class="flex items-center bg-white p-4 rounded-xl shadow-md">
+                <input type="checkbox" id="todo1"
+                    class="todo-checkbox w-5 h-5 text-green-700 rounded focus:ring-2 focus:ring-green-500">
+                <label for="todo1" class="ml-3 text-gray-800 cursor-pointer">Pisahkan limbah elektronik dari sampah
+                    biasa</label>
+            </li>
+            <li class="flex items-center bg-white p-4 rounded-xl shadow-md">
+                <input type="checkbox" id="todo2"
+                    class="todo-checkbox w-5 h-5 text-green-700 rounded focus:ring-2 focus:ring-green-500">
+                <label for="todo2" class="ml-3 text-gray-800 cursor-pointer">Donasikan perangkat yang masih bisa
+                    digunakan</label>
+            </li>
+            <li class="flex items-center bg-white p-4 rounded-xl shadow-md">
+                <input type="checkbox" id="todo3"
+                    class="todo-checkbox w-5 h-5 text-green-700 rounded focus:ring-2 focus:ring-green-500">
+                <label for="todo3" class="ml-3 text-gray-800 cursor-pointer">Kirim e-waste ke tempat pengelolaan
+                    resmi</label>
+            </li>
+            <li class="flex items-center bg-white p-4 rounded-xl shadow-md">
+                <input type="checkbox" id="todo4"
+                    class="todo-checkbox w-5 h-5 text-green-700 rounded focus:ring-2 focus:ring-green-500">
+                <label for="todo4" class="ml-3 text-gray-800 cursor-pointer">Edukasi teman dan keluarga tentang limbah
+                    elektronik</label>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- 👥 Tentang -->
+    <section id="tentang" class="bg-green-100 py-16 text-center px-6">
+        <h2 class="text-2xl font-semibold text-green-800 mb-6">Tentang Proyek</h2>
+        <p class="max-w-2xl mx-auto text-gray-700 mb-4">
+            Proyek “Edukasi Hijau Digital” dibuat oleh Kelompok 3 sebagai upaya untuk meningkatkan kesadaran masyarakat
+            terhadap pentingnya pengelolaan limbah elektronik di era digital.
+        </p>
+    </section>
+
+    <!-- 🌍 Footer -->
+    <footer class="bg-green-700 text-white text-center py-4 text-sm">
+        © 2025 Edukasi Hijau Digital | Dibuat oleh Kelompok 3 🌿
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
