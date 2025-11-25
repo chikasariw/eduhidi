@@ -119,117 +119,207 @@
 
     <!-- Konten Materi -->
     <section class="py-24 pt-10 px-6"  id="sidebarTabs">
-        <div class="md:flex max-w-7xl mx-auto" >
-
-            <!-- TABS -->
-            <div class="md:w-64 sticky top-20 h-fit bg-slate-800 p-4 rounded-lg mb-4 md:me-4">
-                <ul id="tabMenu" class="flex-column space-y space-y-2 text-sm md:mb-0 sticky top-4">
-                    <li>
-                        <button data-tab="tab1" class="tab-btn inline-flex items-center px-4 py-2.5 text-white bg-slate-700 bg-teal-500 rounded active w-full whitespace-nowrap">Apa itu E-Waste?</button>
-                    </li>
-                    <li>
-                        <button data-tab="tab2" class="tab-btn inline-flex items-center px-4 py-2.5 text-white bg-slate-700 rounded active w-full whitespace-nowrap">Dampak E-Waste</button>
-                    </li>
-                    <li>
-                        <button data-tab="tab3" class="tab-btn inline-flex items-center px-4 py-2.5 text-white bg-slate-700 rounded active w-full whitespace-nowrap">Cara Menangani</button>
-                    </li>
-                </ul>
+        <div class="max-w-7xl mx-auto" >
+            <!-- TAB MENU -->
+            <div class="sticky top-16 h-fit">
+                <div id="scrollTabs" class="bg-slate-800 p-2 rounded-lg mb-4 overflow-x-auto">
+                    <ul id="tabMenu" class="flex space-x-2 text-sm md:mb-0 w-max">
+                        <li>
+                            <button data-tab="tab1" class="tab-btn inline-flex items-center px-4 py-2.5 text-white bg-slate-700 bg-teal-500 rounded whitespace-nowrap">
+                                Apa itu E-Waste?
+                            </button>
+                        </li>
+                        <li>
+                            <button data-tab="tab2" class="tab-btn inline-flex items-center px-4 py-2.5 text-white bg-slate-700 rounded whitespace-nowrap">
+                                Dampak E-Waste
+                            </button>
+                        </li>
+                        <li>
+                            <button data-tab="tab3" class="tab-btn inline-flex items-center px-4 py-2.5 text-white bg-slate-700 rounded whitespace-nowrap">
+                                Cara Menangani
+                            </button>
+                        </li>
+                        <li>
+                            <button data-tab="tab6" class="tab-btn inline-flex items-center px-4 py-2.5 text-white bg-slate-700 rounded whitespace-nowrap">
+                                Kebijakan Indonesia
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <!-- TAB CONTENT -->
             <div class="w-full">
-                <div id="tab1" class="tab-content border border-slate-700 rounded-lg">
-                    <img src="/assets/limbahelektronik_1.jpg" alt="E-waste" class="w-full rounded-lg object-cover object-[70%_30%] h-60 ">
-                    <div class="p-5 sm:p-6">
-                        <h2 class="text-3xl sm:text-4xl font-bold text-slate-200 mb-4">Apa Itu E-Waste?</h2>
-                        <p class="text-md sm:text-lg text-slate-200 mb-4 leading-relaxed">
-                            E-waste (electronic waste) atau limbah elektronik adalah barang elektronik yang sudah rusak, tidak digunakan lagi, atau tidak bisa diperbaiki.
+                <div id="tab1" class="tab-content border border-slate-700 border-slate-700 rounded-lg p-4 sm:p-6">
+                    <img src="/assets/limbahelektronik_1.jpg" alt="E-waste" class="w-full rounded-lg object-cover object-[70%_30%] h-60">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-200 my-4">Apa Itu E-Waste?</h2>
+                    <p class="text-slate-200 mb-4 leading-relaxed">
+                        E-waste mengandung campuran bahan berharga dan berbahaya seperti logam berat, yang jika tidak ditangani dengan benar dapat mencemari lingkungan dan membahayakan kesehatan.
+                        E-waste (electronic waste) atau limbah elektronik adalah barang elektronik yang sudah rusak, tidak digunakan lagi, atau tidak bisa diperbaiki. 
+                    </p>
+                    <p class="text-slate-200 mb-4 leading-relaxed">
+                        Menurut United Nations Environment Programme (UNEP, 2019), e-waste mencakup seluruh peralatan listrik dan elektronik yang menjadi limbah, termasuk semua komponen, sub-assembly, dan bagian pendukung yang melekat pada perangkat ketika perangkat tersebut dianggap sebagai limbah. Hal ini berarti bukan hanya perangkat utamanya saja, tetapi juga bagian kecil seperti baterai, kabel, layar LCD, dan komponen internal lainnya.
+                    </p>
+
+                    <p class="text-slate-200 mb-4 leading-relaxed">
+                        E-waste menjadi perhatian global karena mengandung campuran bahan berharga seperti emas, tembaga, dan perak, namun juga bahan berbahaya seperti merkuri, timbal, dan kadmium. Jika tidak dikelola dengan benar, bahan berbahaya ini dapat mencemari tanah, air, udara, serta membahayakan kesehatan manusia.
+                    </p>
+                    <div class="rounded-lg bg-slate-800 p-4 mt-4 overflow-x-auto">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-3">Jenis-jenis E-Waste:</h3>
+
+                        <table class="w-full border border-slate-700 rounded-lg text-sm md:text-base">
+                            <thead>
+                                <tr class="bg-slate-700 text-slate-200">
+                                    <th class="border border-slate-600 p-2 text-left">Kategori</th>
+                                    <th class="border border-slate-600 p-2 text-left">Contoh Perangkat</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="text-slate-300">
+                                <tr>
+                                    <td class="border border-slate-700 p-2 font-semibold">E-waste rumah tangga</td>
+                                    <td class="border border-slate-700 p-2">TV, AC, kulkas, microwave, blender</td>
+                                </tr>
+
+                                <tr class="bg-slate-900/40">
+                                    <td class="border border-slate-700 p-2 font-semibold">Perangkat pribadi</td>
+                                    <td class="border border-slate-700 p-2">Laptop, smartphone, smartwatch, earphone</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="border border-slate-700 p-2 font-semibold">Komponen kecil</td>
+                                    <td class="border border-slate-700 p-2">Charger, kabel, kartu memori</td>
+                                </tr>
+
+                                <tr class="bg-slate-900/40">
+                                    <td class="border border-slate-700 p-2 font-semibold">Baterai & energi</td>
+                                    <td class="border border-slate-700 p-2">Baterai lithium, power bank, UPS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="rounded-lg bg-slate-800 p-4 mt-4">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-2">Mengapa E-Waste Terus Meningkat?</h3>
+                        <p class="text-slate-200 mb-2 leading-relaxed">
+                            Pertumbuhan limbah elektronik meningkat setiap tahun karena beberapa faktor, seperti:
                         </p>
-                        <p class="text-md sm:text-lg text-slate-200 mb-4">
-                            Menurut United Nations Environment Programme (UNEP, 2019), e-waste mencakup seluruh peralatan listrik dan elektronik yang menjadi limbah, termasuk semua komponen, sub-assembly, dan bagian pendukung yang melekat pada perangkat ketika perangkat tersebut dianggap sebagai limbah. Hal ini berarti bukan hanya perangkat utamanya saja, tetapi juga bagian kecil seperti baterai, kabel, layar LCD, dan komponen internal lainnya.
-                        </p>
-    
-                        <p class="text-md sm:text-lg text-slate-200 mb-4">
-                            E-waste menjadi perhatian global karena mengandung campuran bahan berharga seperti emas, tembaga, dan perak, namun juga bahan berbahaya seperti merkuri, timbal, dan kadmium. Jika tidak dikelola dengan benar, bahan berbahaya ini dapat mencemari tanah, air, udara, serta membahayakan kesehatan manusia.
-                        </p>
-                        <p class="text-md sm:text-lg text-slate-200 mb-4 leading-relaxed">
-                            E-waste mengandung campuran bahan berharga dan berbahaya seperti logam berat, yang jika tidak ditangani dengan benar dapat mencemari lingkungan dan membahayakan kesehatan.
-                        </p>
-                        <div class="rounded-lg bg-slate-800 p-4 mt-4 overflow-x-auto">
-                            <h3 class="text-xl font-semibold text-slate-200 mb-3">Jenis-jenis E-Waste:</h3>
+                        <ul class="list-disc text-slate-300 ml-5 space-y-1">
+                            <li>Perkembangan teknologi cepat yang membuat suatu produk cepat ketinggalan zaman.</li>
+                            <li>Adanya tren konsumsi berlebihan hingga membangun kebiasaan upgrade gadget walaupun masih berfungsi.</li>
+                            <li>Pemasaran agresif yang mendorong pengguna membeli perangkat baru.</li>
+                            <li>Kualitas produk menurun, yakni banyak perangkat dibuat dengan masa pakai pendek.</li>
+                        </ul>
+                    </div>
 
-                            <table class="w-full border border-slate-700 rounded-lg text-sm md:text-base">
-                                <thead>
-                                    <tr class="bg-slate-700 text-slate-200">
-                                        <th class="border border-slate-600 p-2 text-left">Kategori</th>
-                                        <th class="border border-slate-600 p-2 text-left">Contoh Perangkat</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody class="text-slate-300">
-                                    <tr>
-                                        <td class="border border-slate-700 p-2 font-semibold">E-waste rumah tangga</td>
-                                        <td class="border border-slate-700 p-2">TV, AC, kulkas, microwave, blender</td>
-                                    </tr>
-
-                                    <tr class="bg-slate-900/40">
-                                        <td class="border border-slate-700 p-2 font-semibold">Perangkat pribadi</td>
-                                        <td class="border border-slate-700 p-2">Laptop, smartphone, smartwatch, earphone</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="border border-slate-700 p-2 font-semibold">Komponen kecil</td>
-                                        <td class="border border-slate-700 p-2">Charger, kabel, kartu memori</td>
-                                    </tr>
-
-                                    <tr class="bg-slate-900/40">
-                                        <td class="border border-slate-700 p-2 font-semibold">Baterai & energi</td>
-                                        <td class="border border-slate-700 p-2">Baterai lithium, power bank, UPS</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="rounded-lg bg-slate-800 p-4 mt-4">
-                            <h3 class="text-xl font-semibold text-slate-200 mb-2">Mengapa E-Waste Terus Meningkat?</h3>
-                            <p class="text-md sm:text-lg text-slate-200 mb-4 leading-relaxed">
-                                Pertumbuhan limbah elektronik meningkat setiap tahun karena beberapa faktor, seperti:
-                            </p>
-                            <ul class="list-disc text-slate-300 ml-5 space-y-1 mb-4">
-                                <li>Perkembangan teknologi cepat yang membuat suatu produk cepat ketinggalan zaman.</li>
-                                <li>Adanya tren konsumsi berlebihan hingga membangun kebiasaan upgrade gadget walaupun masih berfungsi.</li>
-                                <li>Pemasaran agresif yang mendorong pengguna membeli perangkat baru.</li>
-                                <li>Kualitas produk menurun, yakni banyak perangkat dibuat dengan masa pakai pendek.</li>
-                            </ul>
-                        </div>
-
-                        <div class="rounded-lg bg-slate-800 p-4 mt-4">
-                            <h3 class="text-xl font-semibold text-slate-200 mb-2">Fakta Penting E-Waste</h3>
-                            <ul class="list-disc text-slate-300 ml-5 space-y-1 mb-4">
-                                <li>Hanya sekitar 17%-20% e-waste global yang didaur ulang dengan benar.</li>
-                                <li>E-waste adalah aliran limbah yang paling cepat meningkat di dunia.</li>
-                                <li>Sebuah smartphone kecil bisa mengandung emas, perak, dan logam langka.</li>
-                            </ul>
-                        </div>
+                    <div class="rounded-lg bg-slate-800 p-4 mt-4">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-2">Fakta Penting E-Waste</h3>
+                        <ul class="list-disc text-slate-300 ml-5 space-y-1">
+                            <li>Hanya sekitar 17%-20% e-waste global yang didaur ulang dengan benar.</li>
+                            <li>E-waste adalah aliran limbah yang paling cepat meningkat di dunia.</li>
+                            <li>Sebuah smartphone kecil bisa mengandung emas, perak, dan logam langka.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div id="tab2" class="tab-content p-6 border bg-slate-800 border-slate-700 rounded hidden">
-                    <h2 class="text-4xl font-bold text-slate-200 mb-4">Coming soon</h2>
-                    <!-- <ul class="text-slate-100 list-disc ml-5 leading-relaxed">
-                        <li><strong>Lingkungan:</strong> mencemari tanah dan air, menurunkan kualitas udara.</li>
-                        <li><strong>Manusia:</strong> menyebabkan gangguan pernapasan dan kerusakan organ tubuh.</li>
-                    </ul> -->
+                <div id="tab2" class="tab-content p-4 sm:p-6 border border-slate-700 rounded-lg hidden">
+                    <!-- <img src="/assets/limbahelektronik_2.jpg" alt="" class="w-full rounded-lg object-cover h-60 mb-4"> -->
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-200 mb-4">Dampak E-Waste</h2>
+
+                    <p class="text-slate-200 leading-relaxed mb-4">
+                        E-waste mengandung bahan beracun seperti timbal, merkuri, arsenik, dan kadmium. Jika dibuang sembarangan, zat ini dapat mencemari lingkungan dan berdampak buruk pada makhluk hidup, termasuk manusia.
+                    </p>
+
+                    <div class="bg-slate-800 p-4 rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-2">Dampak Lingkungan</h3>
+                        <ul class="list-disc ml-5 text-slate-300 space-y-1 leading-relaxed">
+                            <li>Mencemari tanah dan air karena zat kimia meresap ketika perangkat membusuk.</li>
+                            <li>Menghasilkan gas beracun ketika dibakar untuk mengambil logam.</li>
+                            <li>Mengurangi habitat alami akibat penambangan bahan mineral baru.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-800 p-4 rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-2">Dampak Kesehatan Manusia</h3>
+                        <ul class="list-disc ml-5 text-slate-300 space-y-1 leading-relaxed">
+                            <li>Gangguan pernapasan akibat inhalasi asap pembakaran perangkat elektronik.</li>
+                            <li>Risiko kanker dari paparan logam berat seperti cadmium & merkuri.</li>
+                            <li>Kerusakan sistem saraf terutama pada anak-anak dan ibu hamil.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-800 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-2">Dampak Ekonomi</h3>
+                        <ul class="list-disc ml-5 text-slate-300 space-y-1 leading-relaxed">
+                            <li>Kerugian karena logam berharga seperti emas & tembaga terbuang sia-sia.</li>
+                            <li>Biaya pengelolaan meningkat karena banyak e-waste tidak dipilah sejak awal.</li>
+                            <li>Peluang ekonomi hilang padahal e-waste bisa menjadi sumber bahan baku baru.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div id="tab3" class="tab-content p-6 border bg-slate-800 border-slate-700 rounded hidden">
-                    <h2 class="text-4xl font-bold text-slate-200 mb-4">Coming soon</h2>
-                    <!-- <ul class="text-slate-100 list-disc ml-5 leading-relaxed">
-                        <li>🔄 <strong>Recycle:</strong> Kirim ke tempat pengelolaan khusus.</li>
-                        <li>♻ <strong>Reuse:</strong> Donasikan perangkat yang masih bisa digunakan.</li>
-                        <li>🚯 <strong>Reduce:</strong> Kurangi kebiasaan gonta-ganti gadget.</li>
-                    </ul> -->
+                <div id="tab3" class="tab-content p-4 sm:p-6 border border-slate-700 rounded-lg hidden">
+                    <!-- <img src="/assets/limbahelektronik_3.jpg" class="w-full rounded-lg h-60 object-cover mb-4"> -->
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-200 mb-4">Cara Menangani E-Waste</h2>
+
+                    <p class="text-slate-200 leading-relaxed mb-4">
+                        Pengelolaan e-waste perlu dilakukan dengan benar agar tidak berakhir di tempat sampah biasa. <br> Berikut cara bijak menangani limbah elektronik:
+                    </p>
+
+                    <div class="bg-slate-800 p-4 rounded-lg">
+                        <ol class="list-disc ml-5 text-slate-200 space-y-2 leading-relaxed">
+                            <li>Pisahkan dari sampah biasa, jangan mencampur baterai, kabel, dan perangkat elektronik dengan sampah rumah tangga.</li>
+                            <li>Perpanjang usia pakai dengan memperbaiki perangkat sebelum memutuskan membeli yang baru.</li>
+                            <li>Donasi atau jual kembali karena banyak perangkat yang masih bisa dipakai orang lain.</li>
+                            <li>Recycle di tempat resmi dengan membawa limbah elektronik ke bank sampah elektronik atau e-waste drop point terdekat.</li>
+                            <li>Kurangi kebiasaan upgrade gadget, pilih perangkat yang tahan lama dan dapat diperbaiki.</li>
+                            <li>Edukasi orang di sekitarmu seperti, keluarga, sekolah, dan teman untuk ikut memilah e-waste.</li>
+                        </ol>
+                    </div>
+
+                    <div class="bg-teal-700/20 border border-teal-600 mt-4 p-4 rounded-lg">
+                        <p class="text-teal-300 font-semibold">
+                            Fun fact: 1 ton smartphone bekas dapat menghasilkan 100x lebih banyak emas dibanding penambangan emas tradisional.
+                        </p>
+                    </div>
                 </div>
+
+                <div id="tab6" class="tab-content p-4 sm:p-6 border border-slate-700 rounded-lg hidden">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-200 mb-4">
+                        Kebijakan & Program E-Waste di Indonesia
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed mb-4">
+                        Pemerintah Indonesia mulai meningkatkan regulasi untuk mengelola limbah elektronik. 
+                        Namun penerapannya masih dalam tahap berkembang dan membutuhkan partisipasi publik.
+                    </p>
+
+                    <div class="bg-slate-800 p-4 rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-2">Regulasi Penting</h3>
+                        <ul class="list-disc ml-5 space-y-2 text-slate-200">
+                            <li><strong>Permen LHK No. 27 Tahun 2020</strong> tentang Pengelolaan Limbah B3 Elektronik.</li>
+                            <li><strong>Sistem Extended Producer Responsibility (EPR)</strong> → produsen wajib menerima perangkat lama.</li>
+                            <li>Larangan membuang e-waste ke tempat sampah biasa di beberapa daerah.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-800 p-4 rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-2">Program & Fasilitas</h3>
+                        <ul class="list-disc ml-5 space-y-2 text-slate-200">
+                            <li>Drop point e-waste di mall seperti IKEA, AEON Mall, dan Samsung Service Center.</li>
+                            <li>Program daur ulang HP oleh brand seperti Samsung, Xiaomi, dan Apple.</li>
+                            <li>Bank Sampah Digital & E-Waste Collection Days di beberapa kota.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-teal-700/20 border border-teal-600 mt-4 p-4 rounded-lg">
+                        <p class="text-teal-300 font-semibold">
+                            Meski regulasi sudah ada, Indonesia masih menghadapi berbagai tantangan, yakni: rendahnya kesadaran masyarakat, kurangnya fasilitas, 
+                            dan belum meratanya akses pengelolaan. Edukasi dan partisipasi publik sangat penting untuk memperbaiki sistem ini.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
